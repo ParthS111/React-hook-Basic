@@ -2,11 +2,6 @@ import React, { useContext, useState } from 'react'
 import { UserContext,  } from '../stateProvider';
 const ThemeContext = React.createContext("dark");
 
-function Button() {
-    return <ThemeContext.Consumer>
-        {theme => <button className={theme}> Amazing button </button>}
-    </ThemeContext.Consumer>
-}
 
 export default function UseContext() {
 

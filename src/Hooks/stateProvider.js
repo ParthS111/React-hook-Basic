@@ -10,10 +10,11 @@ export const UserContext = createContext({
 
 const StateProvider=({ reducer, children })=> {
     const [userId, setUserId] = useState(null);
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState("parth@gmail.com");
     const [state, dispatch] = useReducer(reducer, {});
+    console.log(user,"545454")
     const userRequire ={user,setUser}
-    const store = useMemo(() => [state, dispatch], [state],userRequire,);
+    const store = useMemo(() => [state, dispatch], [state],userRequire);
   
     return (
        <StateContext.Provider value={store}>
