@@ -21,7 +21,7 @@ function UseEffect() {
         setAdd(add + 1)
     }
     const minusValue = () => {
-        if (add == 1) {
+        if (add === 1) {
             setAdd(1)
         }
         else {
@@ -31,7 +31,7 @@ function UseEffect() {
     return (
         <div>
             <h1>{value},  I am shah {add}</h1>
-            <button onClick={addValue}>Add</button><br /> <br />  <button onClick={minusValue} disabled={add == 1 ? false : false}>Minus</button>
+            <button onClick={addValue}>Add</button><br /> <br />  <button onClick={minusValue} disabled={add === 1 ? false : false}>Minus</button>
         </div>
     )
 }

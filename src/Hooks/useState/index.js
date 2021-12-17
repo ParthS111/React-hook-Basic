@@ -7,7 +7,7 @@ function UseState() {
     setAdd(add + 1)
   }
   const minusValue = () => {
-    if (add == 1) {
+    if (add === 1) {
       setAdd(1)
     }
     else {
@@ -17,7 +17,7 @@ function UseState() {
   return (
     <div className="App">
       <h1>
-        <input type="text" name="name" id="" onChange={(e) => e.target.value==1? setAdd(1): setAdd(e.target.value)} value={add} />
+        <input type="text" name="name" id="" onChange={(e) => e.target.value===1? setAdd(1): setAdd(e.target.value)} value={add} />
         {add}
       </h1>
       <h1> {add}</h1>
